@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Календарь со событиями</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="moment.js"></script>
+</head>
+<body>
+    <div class="calendar-block-outter">
+        <div class="calendar-block">
+            <div class="calendar-block--header">
+                <div class="calendar-block--header-left">
+                    <button id="addInfo">Добавить</button>
+                    <button id="reloadInfo">Обновить</button>
+                </div>
+                <div class="calendar-block--header-right">
+                    <img src="img/search.png" alt="Search">
+                    <input type="search" placeholder="Событие, дата или участник">
+                </div>
+            </div>
+            <div class="calendar-block--content">
+                <div class="calendar-block--content-nav">
+                    <div id="arrow-left">
+                        <img src="img/arrow.png" alt="Left">
+                    </div>
+                    <div id="month-year" class="content-nav--search-all"></div>
+                    <div id="arrow-right">
+                        <img src="img/arrow.png" alt="Right">
+                    </div>
+                    <button id="this-month" class="content-nav--search-this">Сегодня</button>
+                </div>
+                <div class="calendar-block--content-date">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-form" id="modal-f"></div>
+</body>
+</html>
